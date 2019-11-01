@@ -30,13 +30,13 @@ int main()
 {
 ////=========== Random Increase Decrease arrays =======
 //------------- Random array -------
-    const int sz = 25;
+    const int sz = 15;
 
     int randArr[sz];     // for Random array
 
     srand(1);
     for (int i = 0; i<sz; i++) {
-        randArr[i] = rand()%(2000-1)+1;
+        randArr[i] = rand()%(1000-1)+1;
     }
 
     printf("=========== Random Increase Decrease arrays ======= \n");
@@ -214,7 +214,7 @@ int main()
 int partition(int A[], int p, int r)
 {
     int x = A[r];
-    int i = (p-1);
+    int i = p-1;
 
     for (int j = p; j<=r-1; j++) {
         if (A[j]<=x) {
@@ -245,7 +245,7 @@ void quickSort(int A[], int p, int r)  //for increase numbers
 int partitionD(int A[], int p, int r)
 {
     int x = A[r];
-    int i = (p-1);
+    int i = p-1;
 
     for (int j = p; j<=r-1; j++) {
         if (A[j]>=x) {
